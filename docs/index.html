@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio and course project website" />
+  <title>MAURO // SYSTEM PORTAL</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header-meta">
+        <span>SYS.001</span>
+        <span>//</span>
+        <span>TERM: 24</span>
+      </div>
+      <div class="header-logo">PERSONAL PORTAL</div>
+      <div class="header-meta" style="justify-content: flex-end">
+        STATUS: <span class="blink">LIVE</span>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="public/about.html">About</a>
+      <a href="public/degree.html">Degree</a>
+      <a href="public/topic.html">Topic</a>
+      <a href="public/net.html">Network</a>
+      <a href="public/contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+      <div class="stamp">Welcome</div>
+      <span class="label">System Portal v1.0</span>
+      <h1>
+        Hello<br />World<span style="color: var(--accent-color)">_</span>
+      </h1>
+      <div class="orange-stripe"></div>
+      <p style="max-width: 60ch; line-height: 1.6">
+        WELCOME TO MY PERSONAL WEBSITE. THIS POINT IS A CENTRAL HUB FOR
+        INFORMATION ABOUT ME, AND VARIOUS TOPICS OF INTEREST.
+        NAVIGATE USING THE LINKS ABOVE TO EXPLORE.
+      </p>
+    </section>
+
+    <section class="data-grid">
+      <div class="data-cell">
+        <span class="label">Portal Identifier</span>
+        <div class="value">#MAURO-2025</div>
+        <div class="barcode"></div>
+      </div>
+      <div class="data-cell">
+        <span class="label">Current Status</span>
+        <div class="value highlight">STUDENT</div>
+        <span class="label" style="margin-top: 10px">Year: 2025-2026</span>
+      </div>
+      <div class="data-cell">
+        <span class="label">System Time</span>
+        <div class="value" id="clock">00:00:00</div>
+        <span class="label" style="margin-top: 10px">Local Time</span>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Quick Navigation</h2>
+      <div class="card-grid" style="margin-top: 1rem;">
+        <div class="card">
+          <div class="card-header">
+            <h3>About Me</h3>
+            <span class="card-number">01</span>
+          </div>
+          <p>Personal information, CV, and social media links.</p>
+          <a href="public/about.html" class="btn" style="margin-top: 1rem;">Access</a>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>My Degree</h3>
+            <span class="card-number">02</span>
+          </div>
+          <p>Overview of my current degree program and subjects.</p>
+          <a href="public/degree.html" class="btn" style="margin-top: 1rem;">Access</a>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Topic</h3>
+            <span class="card-number">03</span>
+          </div>
+          <p>In-depth exploration of a chosen topic of interest.</p>
+          <a href="public/topic.html" class="btn" style="margin-top: 1rem;">Access</a>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Network</h3>
+            <span class="card-number">04</span>
+          </div>
+          <p>Links to partner sites and classmate portfolios.</p>
+          <a href="public/net.html" class="btn" style="margin-top: 1rem;">Access</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="receipt-section">
+      <div class="receipt-text">
+        <p>> SYSTEM INITIALIZED...</p>
+        <p>> LOADING PORTFOLIO DATA...</p>
+        <p>> CONNECTION ESTABLISHED</p>
+        <p style="color: var(--accent-color)">> WELCOME, VISITOR</p>
+      </div>
+      <div style="text-align: right">
+        <p>PAGES AVAILABLE</p>
+        <p style="font-size: 2rem; font-weight: bold">7</p>
+      </div>
+    </section>
+
+    <div class="marquee-container">
+      <div class="marquee-content">
+        *** PERSONAL PORTFOLIO // FUNDAMENTALS OF COMPUTER ENGINEERING *** PROJECT ID: PRACTICAL-WORK-2 *** STATUS:
+        OPERATIONAL *** BUILT WITH HTML & CSS ***
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString("en-US", {
+        hour12: false,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      });
+      document.getElementById("clock").innerText = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+
+</html>
