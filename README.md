@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a personal portfolio website created for the Fundamentals of The Computer Engineering course.
+This project is a personal portfolio website created for the Fundamentals of The Computer Engineering course by me.
 
 ## Structure
 
@@ -22,8 +22,7 @@ docs/
 
 ## Features
 
-- **Brutalist Design**: Industrial aesthetic with monospace fonts and bold typography
-- **Fully Responsive**: Works on desktop and mobile devices
+- **Responsive**: Works on desktop and mobile devices because of course i took my time to make sure
 - **Single CSS File**: All pages share a common stylesheet
 - **No JavaScript Dependencies**: Pure HTML/CSS (minimal JS for decorative effects)
 
@@ -49,6 +48,8 @@ docs/
 - Ensuring consistent styling across all pages with a single CSS file
 - Getting the striped background to work at all becayse of the z-index
 - Ensuring consistent button styles and animations
+- Getting mailto to work
+- Maintaining correct image size and aspect
 
 
 ## Conclusions
