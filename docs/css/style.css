@@ -53,6 +53,31 @@ a:hover {
   box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.1);
   position: relative;
   margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+/* Diagonal Color Streak */
+.diagonal-streak {
+  position: absolute;
+  top: 700px;
+  right: -180px;
+  width: 1600px;
+  height: 300px;
+  background: linear-gradient(to bottom,
+      #F5C64E 0%,
+      #F5C64E 20%,
+      #E56A3B 20%,
+      #E56A3B 40%,
+      #D6454D 40%,
+      #D6454D 60%,
+      #C23A77 60%,
+      #C23A77 80%,
+      #5B2E61 80%,
+      #5B2E61 100%);
+  transform: rotate(-25deg);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 1;
 }
 
 header {
@@ -260,6 +285,8 @@ th {
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
 }
 
 tr:nth-child(even) {
@@ -316,11 +343,14 @@ button,
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s ease;
+  position: relative;
+  z-index: 2;
 }
 
 button:hover,
 .btn:hover {
   background: var(--accent-color);
+  background-color: #000;
   border-color: var(--accent-color);
   box-shadow: 4px 4px 0 var(--ink-color);
 }
@@ -343,6 +373,14 @@ button:hover,
   font-size: 0.8rem;
   color: #666;
   text-transform: uppercase;
+  overflow: hidden;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
 }
 
 img {
@@ -392,9 +430,10 @@ img {
 }
 
 .social-link:hover {
-  background: var(--ink-color);
-  color: var(--bg-color);
+  background: var(--accent-color);
+  background-color: #000;
 }
+
 
 /* --- DECORATIVE STAMP --- */
 .stamp {

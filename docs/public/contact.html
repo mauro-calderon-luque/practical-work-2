@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="diagonal-streak"></div>
+        <div class="diagonal-streak" style="z-index: 0;"></div>
 
         <header>
             <div class="header-meta">
@@ -48,7 +48,7 @@
 
         <section class="content">
             <h2>Message Form</h2>
-            <form action="#" method="post" onsubmit="return false;">
+            <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required />
@@ -88,7 +88,7 @@
                 <p>> CONTACT FORM READY...</p>
                 <p>> AWAITING INPUT...</p>
                 <p>> ALL FIELDS REQUIRED</p>
-                <p style="color: var(--accent-color)">> FORM DOES NOT SUBMIT DATA</p>
+                <p style="color: var(--accent-color)">> MAILTO: ACTIVE</p>
             </div>
             <div style="text-align: right">
                 <p>FORM FIELDS</p>
@@ -98,11 +98,25 @@
 
         <div class="marquee-container">
             <div class="marquee-content">
-                *** CONTACT TERMINAL // MESSAGE FORM *** NOTE: THIS FORM IS FOR DEMONSTRATION PURPOSES ONLY *** NO DATA
-                IS TRANSMITTED OR STORED ***
+                *** CONTACT TERMINAL *** *** MESSAGE FORM *** *** THERE IS NO WAY YOU ARE ACTUALLY READING THIS RIGHT?
+                ***
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = encodeURIComponent('Contact from ' + name);
+            const body = encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+            window.location.href = 'mailto:your-email@example.com?subject=' + subject + '&body=' + body;
+        });
+    </script>
 </body>
 
 </html>
