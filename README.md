@@ -10,6 +10,7 @@ This project is a personal portfolio website created for the Fundamentals of The
 docs/
 ├── css/style.css
 ├── images/
+├── assets/
 ├── public/
 │   ├── about.html
 │   ├── contact.html
@@ -36,6 +37,7 @@ docs/
 | net.html     | Links to partner websites                    |
 | topic.html   | Information on a chosen topic                |
 | degree.html  | Degree structure and subjects                |
+| fce.html     | Fundamentals of Computer Engineering         |
 
 ## Technologies Used
 
@@ -43,18 +45,18 @@ docs/
 - CSS3
 - Google Fonts (Space Mono, Chakra Petch)
 
-## Problems Encountered
+## Issues
 
 - Ensuring consistent styling across all pages with a single CSS file
 - Getting the striped background to work at all becayse of the z-index
 - Ensuring consistent button styles and animations
 - Getting mailto to work
 - Maintaining correct image size and aspect
-
+- The bottom page markee
 
 ## Conclusions
 
-This project demonstrates proficiency in HTML and CSS fundamentals needed for basic web apps and web development in general, including external stylesheets, basic javascript, and responsive design principles, it also shows the non-necessity of common modern web frameworks that slow execution and increase page size.
+This project demonstrates proficiency in HTML and CSS fundamentals needed for basic web apps and web development in general, including a site map, external stylesheets, basic javascript, and responsive design principles, it also shows the non-necessity of common modern web frameworks that slow execution and increase page size.
 
 ## Author
 
