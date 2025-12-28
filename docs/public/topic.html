@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Topic - Systems Engineering and Low-Level Programming" />
+    <title>TOPIC // SYSTEM PORTAL</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="diagonal-streak" style="z-index: 0;"></div>
+
+        <header>
+            <div class="header-meta">
+                <span>SYS.005</span>
+                <span>//</span>
+                <span>TOPIC</span>
+            </div>
+            <div class="header-logo">PERSONAL PORTAL</div>
+            <div class="header-meta" style="justify-content: flex-end">
+                STATUS: <span class="blink">LIVE</span>
+            </div>
+        </header>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="degree.html">Degree</a>
+            <a href="topic.html" class="active">Topic</a>
+            <a href="net.html">Network</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <section class="hero">
+            <div class="stamp">Systems</div>
+            <span class="label">Topic Exploration</span>
+            <h1>
+                Low-Level<br />Programming<span style="color: var(--accent-color)">_</span>
+            </h1>
+            <div class="orange-stripe"></div>
+            <p style="max-width: 60ch; line-height: 1.6">
+                AN EXPLORATION OF SYSTEMS ENGINEERING, LOW-LEVEL PROGRAMMING, AND THE
+                FUNDAMENTAL LAYERS THAT MAKE COMPUTERS WORK.
+            </p>
+        </section>
+
+        <section class="content">
+            <h2>Introduction</h2>
+            <p>
+                Low-level programming refers to writing code that operates close to the hardware,
+                giving programmers direct control over memory, processor instructions, and system resources.
+                Unlike high-level languages that abstract away hardware details, low-level programming
+                requires understanding how the machine actually works.
+            </p>
+            <p>
+                Systems engineering combines hardware and software knowledge to build the foundational
+                layers of computing: operating systems, device drivers, embedded systems, compilers,
+                and the tools that other software depends on.
+            </p>
+        </section>
+
+        <section class="content">
+            <h2>Key Concepts</h2>
+            <div class="image-grid">
+                <div class="image-placeholder">
+                    <img src="../images/cpu-architecture.jpg" alt="CPU Architecture"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='[IMAGE: CPU Architecture]';" />
+                </div>
+                <div class="image-placeholder">
+                    <img src="../images/memory-layout.jpg" alt="Memory Layout"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='[IMAGE: Memory Layout]';" />
+                </div>
+            </div>
+        </section>
+
+        <section class="data-grid">
+            <div class="data-cell">
+                <span class="label">Assembly Language</span>
+                <div class="value highlight">ASM</div>
+                <p style="margin-top: 10px; font-size: 0.85rem;">
+                    Human-readable representation of machine code. Direct CPU instruction control.
+                </p>
+            </div>
+            <div class="data-cell">
+                <span class="label">C Language</span>
+                <div class="value highlight">C</div>
+                <p style="margin-top: 10px; font-size: 0.85rem;">
+                    The lingua franca of systems programming. Kernels, drivers, and embedded systems.
+                </p>
+            </div>
+            <div class="data-cell">
+                <span class="label">Memory Management</span>
+                <div class="value highlight">MEM</div>
+                <p style="margin-top: 10px; font-size: 0.85rem;">
+                    Manual allocation, pointers, stack vs heap, and understanding memory layout.
+                </p>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Core Topics</h2>
+            <ul class="unit-list">
+                <li>
+                    <strong>Operating Systems:</strong> Process management, memory virtualization, file systems, and
+                    kernel development.
+                </li>
+                <li>
+                    <strong>Embedded Systems:</strong> Microcontrollers, real-time systems, bare-metal programming, and
+                    hardware interfaces.
+                </li>
+                <li>
+                    <strong>Computer Architecture:</strong> CPU design, instruction sets (x86, ARM, RISC-V), pipelining,
+                    and caches.
+                </li>
+                <li>
+                    <strong>Compilers & Interpreters:</strong> Lexing, parsing, code generation, and optimization
+                    passes.
+                </li>
+                <li>
+                    <strong>Device Drivers:</strong> Hardware abstraction, interrupt handling, and kernel-space
+                    programming.
+                </li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2>Languages & Tools</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool/Language</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C</td>
+                        <td>Operating systems, embedded systems, system utilities</td>
+                    </tr>
+                    <tr>
+                        <td>Rust</td>
+                        <td>Memory-safe systems programming, kernels, CLI tools</td>
+                    </tr>
+                    <tr>
+                        <td>Assembly (x86/ARM)</td>
+                        <td>Bootloaders, performance-critical sections, debugging</td>
+                    </tr>
+                    <tr>
+                        <td>GDB</td>
+                        <td>Debugging at the assembly level, memory inspection</td>
+                    </tr>
+                    <tr>
+                        <td>QEMU</td>
+                        <td>Hardware emulation for OS development and testing</td>
+                    </tr>
+                    <tr>
+                        <td>Make / CMake</td>
+                        <td>Build systems for compiling native code</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content">
+            <h2>Why Low-Level Matters</h2>
+            <p>
+                Understanding low-level programming gives you insight into how software actually
+                runs on hardware. It helps you write more efficient high-level code, debug complex
+                issues, and build systems that others depend on.
+            </p>
+            <p>
+                From the Linux kernel to game engines, from IoT devices to datacenter infrastructure,
+                low-level programming is the foundation that makes everything else possible.
+            </p>
+        </section>
+
+        <section class="content">
+            <h2>References & Further Reading</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.kernel.org/" target="_blank">The Linux Kernel Archives</a>
+                </li>
+                <li>
+                    <a href="https://wiki.osdev.org/" target="_blank">OSDev Wiki - OS Development</a>
+                </li>
+                <li>
+                    <a href="https://godbolt.org/" target="_blank">Compiler Explorer - See generated assembly</a>
+                </li>
+                <li>
+                    <a href="https://doc.rust-lang.org/book/" target="_blank">The Rust Programming Language Book</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="receipt-section">
+            <div class="receipt-text">
+                <p>> TOPIC ANALYSIS COMPLETE...</p>
+                <p>> SUBJECT: SYSTEMS ENGINEERING</p>
+                <p>> LEVEL: LOW</p>
+                <p style="color: var(--accent-color)">> PREREQUISITES: C, ARCHITECTURE</p>
+            </div>
+            <div style="text-align: right">
+                <p>REFERENCES</p>
+                <p style="font-size: 2rem; font-weight: bold">4</p>
+            </div>
+        </section>
+
+        <div class="marquee-container">
+            <div class="marquee-content">
+                *** TOPIC EXPLORATION // LOW-LEVEL PROGRAMMING *** SYSTEMS ENGINEERING *** C // ASSEMBLY // RUST ***
+                CLOSE TO THE METAL ***
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
